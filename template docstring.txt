@@ -1,0 +1,23 @@
+Descrição breve da função. Explique o que a função faz de forma concisa.
+
+    Parâmetros:
+    -----------
+    param1 : tipo
+        Descrição do primeiro parâmetro. Especifique o que o parâmetro representa.
+    param2 : tipo
+        Descrição do segundo parâmetro. Inclua detalhes adicionais se necessário.
+
+    Retorno:
+    --------
+    tipo_de_retorno
+        Descrição do valor de retorno. Explique o que é retornado e em que condições.
+    
+    Exceções:
+    ---------
+    TipoDaExcecao
+        Explique as condições sob as quais uma exceção pode ser levantada.
+
+    Exemplo de uso:
+    ---------------
+    >>> resultado = nome_da_funcao(valor1, valor2)
+    >>> print(resultado)
