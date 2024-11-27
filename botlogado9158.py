@@ -1,9 +1,9 @@
 import requests
 import discord
 from discord.ext import tasks, commands
-import time
 from tokens import token
 url = "https://api.battlemetrics.com/servers/27038370"
+
 
 ID_CANAL = 1265507071873257572
 
@@ -45,7 +45,7 @@ async def on_ready():
         return
     
     ultima_contagem_jogadores = contagem_inicial_jogadores
-    variacao_jogadores = 3
+    variacao_jogadores = 0
     tempo_ultimo_reset = bot.loop.time()
     
     if not monitorar_servidor.is_running():
@@ -110,9 +110,4 @@ async def reset_variacao(ctx):
         danger = 0
         await ctx.send(":thumbsup:")
 
-try:
-    bot.run(token)
-except Exception as e:
-    print(f"Ocorreu um erro: {e}")
-    time.sleep(5)
-    bot.run(token)
+bot.run(token)
